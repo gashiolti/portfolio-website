@@ -235,6 +235,7 @@ header {
 @media (max-width: 1000px) {
     .nav__list {
         align-items: center;
+        padding-left: 0;
     }
 
     .nav-open .nav {
