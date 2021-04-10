@@ -396,10 +396,17 @@ header {
 .portfolio__item {
     border: 2px solid var(--clr-text);
     overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.portfolio__item:hover {
+    border: 5px solid var(--clr-accent);
+    transition: 500ms ease-in-out;
 }
 
 .portfolio__img {
-    border: 1px solid var(--clr-third);
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
