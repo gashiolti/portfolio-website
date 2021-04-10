@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="logo" onclick="window.location='index.html'">
+            <img src="images/output-onlinetexttools.png" alt="logo">
+        </div>
+
+        <button class="button nav-toggle" aria-label="toggle navigation"><i class="fas fa-bars"></i></button>
+
+        <nav class="nav nav-open">
+            <ul class="nav__list"> <!--the double underscore means that this element is a subcomponent-->
+                <li class="navv__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="navv__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="navv__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="navv__item"><a href="#work" class="nav__link">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hey there, I am <strong>Oltion Gashi</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">back-end dev</p>
+        <div class="section__image">
+            <img src="images/cl-final.jpg" alt="Me" class="intro__img">
+        </div>
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">WHAT I DO?</h2>
+        <div class="service">
+            <h3>Back-End Web Development</h3>
+            <p>As an entry level developer I intend to go for back-end programming.</p>
+        </div> <!-- /service -->
+        <a href="#work" class="btn">PROJECTS</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">WHO AM I?</h2>
+        <p class="section__subtitle section__subtitle--about">Back-end developer</p>
+
+        <div class="about-me__body">
+            <p>My name is OLTION GASHI and I am currently pursuing my Bachelor Degree in Computer Science, branch Software Design in University of Prizren, Ukshin Hoti. For now I want to be a back-end developer as I am interested more in back end stuff. :)
+                <br /> <br />
+
+                I love exploring new technologies and being a practitioner, I like to stay on top of latest trends.</p>
+        </div>
+        <img src="images/me2final.jpg" alt="Another me" class="about-me__img">
+    </section>
+
+    <!-- My work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">PROJECTS</h2>
+        <p class="section__subtitle section__subtitle--work" onclick="window.location='portfolio-item.html'" style="cursor: pointer;">
+            Ecommerce
+        </p>
+
+        <div class="portfolio">
+            <!-- Portfolio 01 -->
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="images/Capture.PNG" alt="image1" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio 02 -->
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="images/Capture2.PNG" alt="image1" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio 03 -->
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="images/Capture3.PNG" alt="image1" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio 04 -->
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="images/Capture4.PNG" alt="image1" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills">
+        <h2 class="section__title section__title--skills">SKILLS</h2>
+        <div class="skills-container">
+            <!-- Skill 01 -->
+            <div class="skills-container__info">
+                <i class="fab fa-html5"></i>
+                <p class="skills-container--info__subtitle">HTML5</p>
+            </div>
+
+            <!-- Skill 02 -->
+            <div class="skills-container__info">
+                <i class="fab fa-css3-alt"></i>
+                <p class="skills-container--info__subtitle">CSS3</p>
+            </div>
+
+            <!-- Skill 03 -->
+            <div class="skills-container__info">
+                <i class="fab fa-js"></i>
+                <p class="skills-container--info__subtitle">Javascript</p>
+            </div>
+
+            <!-- Skill 04 -->
+            <div class="skills-container__info">
+                <i class="fab fa-php"></i>
+                <p class="skills-container--info__subtitle">PHP</p>
+            </div>
+
+            <!-- Skill 05 -->
+            <div class="skills-container__info">
+                <i class="fas fa-database"></i>
+                <p class="skills-container--info__subtitle">MySQL</p>
+            </div>
+
+            <!-- Skill 06 -->
+            <div class="skills-container__info">
+                <i class="fab fa-git-alt"></i>
+                <p class="skills-container--info__subtitle">GIT</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:gashioltion20@gmail.com" class="footer__link">gashioltion20@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/gashiolti" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/oltion-gashi-1055b220b/" class="social-list__link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.instagram.com/olti.gashii/" class="social-list__link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="JS/index.js"></script>
+
+</body>
+</html>
