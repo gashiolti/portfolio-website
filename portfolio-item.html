@@ -1,93 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+      integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo" onclick="window.location='index.html'">
-            <img src="images/output-onlinetexttools.png" alt="logo">
-        </div>
+      <div class="logo" onclick="window.location='index.html'">
+        <img src="images/output-onlinetexttools.png" alt="logo" />
+      </div>
 
-        <button class="button nav-toggle" aria-label="toggle navigation"><i class="fas fa-bars"></i></button>
+      <button class="button nav-toggle" aria-label="toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
 
-        <nav class="nav nav-open">
-            <ul class="nav__list"> <!--the double underscore means that this element is a subcomponent-->
-                <li class="navv__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="navv__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                <li class="navv__item"><a href="index.html#about" class="nav__link">About Me</a></li>
-                <li class="navv__item"><a href="index.html#work" class="nav__link">Projects</a></li>
-            </ul>
-        </nav>
+      <nav class="nav nav-open">
+        <ul class="nav__list">
+          <!--the double underscore means that this element is a subcomponent-->
+          <li class="navv__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="navv__item">
+            <a href="index.html#services" class="nav__link">My Services</a>
+          </li>
+          <li class="navv__item">
+            <a href="index.html#about" class="nav__link">About Me</a>
+          </li>
+          <li class="navv__item">
+            <a href="index.html#work" class="nav__link">Projects</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-
 
     <!-- Introduction -->
     <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Job  Portal
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Java & MYSQL</p>
-        <div class="section__image">
-            <img src="images/searchjob.jpg" alt="Me" class="intro__img">
-        </div>
+      <h1 class="section__title section__title--intro">Job Portal</h1>
+      <p class="section__subtitle section__subtitle--intro">Java & MYSQL</p>
+      <div class="section__image">
+        <img src="images/searchjob.jpg" alt="Me" class="intro__img" />
+      </div>
     </section>
 
     <div class="portfolio-item-individual">
-        <p>So, it took me about 2 months to complete this web project on backend, while I used a free template on front end(though I had to make a few html templates myself). So this project consists of two roles: Administrator and User(companies). CRUD mode for both roles, Admin manages users and posts and contact forms, whereas user(company) can make posts (job offers), update and delete them, also can update company details. Unregistered users can only submit contact form.<br>
-        Technologies used for backend: Java, MySQL, Servlets, MVC Model.<br />
-        Link to this webiste: <a href="https://searchjob-portal.herokuapp.com/">https://searchjob-portal.herokuapp.com/</a>
-            <br /> or here are some images showcasing my work &#x1F600;
-        </p>
-        <h3>USER PART</h3>
-        <img src="images/jobportal.PNG" alt="image1">
-        <img src="images/jobportal2.PNG" alt="image2">
-        <img src="images/jobportal3.PNG" alt="image3">
-        <img src="images/jobportal5.PNG" alt="image4">
-        <img src="images/jobportal6.PNG" alt="image6">
-        
-        <h3>ADMINISTRATOR PART</h3>
-        <img src="images/jobportal4.PNG" alt="image8">
-        <p class="portfolio-item-individual--lastparagraph">Hopefully I have grabbed your attention so we can get in touch and I can become part of your next experience. <br /> Contact &#x1F447;</p>
+      <p>
+        So, I used a free template for frontend (though I had to make a few
+        templates myself) and I was mainly focused on backend. So this project
+        consists of two roles: Administrator and User(companies). CRUD
+        operations for both roles, Admin manages users, posts and contact forms,
+        whereas user(company) can make posts (job offers), update and delete
+        them, also can update company details (profile). Unsigned up users can
+        only submit contact form.<br />
+        Technologies used for backend: Java, MySQL, Servlets, MVC Pattern.<br />
+        Link to this webiste:
+        <a href="https://searchjob-portal.herokuapp.com/"
+          >https://searchjob-portal.herokuapp.com/</a
+        >
+        <br />
+        or here are some images showcasing my work &#x1F600;
+      </p>
+      <h3>USER PART</h3>
+      <img src="images/jobportal.PNG" alt="image1" />
+      <img src="images/jobportal2.PNG" alt="image2" />
+      <img src="images/jobportal3.PNG" alt="image3" />
+      <img src="images/jobportal5.PNG" alt="image4" />
+      <img src="images/jobportal6.PNG" alt="image6" />
+
+      <h3>ADMINISTRATOR PART</h3>
+      <img src="images/jobportal4.PNG" alt="image8" />
+      <p class="portfolio-item-individual--lastparagraph">
+        Hopefully I have grabbed your attention so we can get in touch and I can
+        become part of your next experience. <br />
+        Contact &#x1F447;
+      </p>
     </div>
-
-
-
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:gashioltion20@gmail.com" class="footer__link">gashioltion20@gmail.com</a>
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a href="https://github.com/gashiolti" class="social-list__link">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://www.linkedin.com/in/oltion-gashi-1055b220b/" class="social-list__link">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://www.instagram.com/olti.gashii/" class="social-list__link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-        </ul>
+      <a href="mailto:gashioltion20@gmail.com" class="footer__link"
+        >gashioltion20@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://github.com/gashiolti" class="social-list__link">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/oltion-gashi-1055b220b/"
+            class="social-list__link"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://www.instagram.com/olti.gashii/"
+            class="social-list__link"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
     </footer>
 
     <script src="JS/index.js"></script>
-
-</body>
+  </body>
 </html>
