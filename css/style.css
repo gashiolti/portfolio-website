@@ -450,7 +450,7 @@ header {
     margin: 10px;
 }
 
-.skills-container__info .fas, .skills-container__info .fab {
+.skills-container__info .fas, .skills-container__info .fab, .skills-container__info .cib {
     padding-top: 20px;
     font-size: 30px;
     text-align: center;
